@@ -18,9 +18,8 @@ html, body{
     grid-template-columns: 1fr;
     grid-template-areas: "header"
                          "nav"
-                        
-                         "main"
                          "main1"
+                         "main"
                          "footer";
 }
 
