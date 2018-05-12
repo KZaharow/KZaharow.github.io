@@ -1,0 +1,105 @@
+html, body {
+    margin: 0;
+}
+ul {
+    margin: 1;
+    list-style-type: none;
+    padding: 0;
+    background-color: #2a2727;
+    font-size: 40px;
+    color: #ffd6;
+    font-family: "Segoe UI light";
+}
+
+#h1{
+	margin: 0;
+    color: #ffd6;
+    font-size: 40px;
+    font-family: "Segoe UI light";  
+}
+
+#h2{
+    margin-top: 3%;
+    margin-left: 5%;
+    color: black;
+    font-size: 30px;
+    font-family: "Segoe UI light";
+}
+
+#listLink{
+    position: center;
+	text-decoration: none;
+	color: gray;
+}
+
+#text{
+
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    color: black;
+    font-size: 25px;
+    font-family: "Segoe UI light";
+	text-align: justify;
+}
+
+#first{
+    display: flex;
+    justify-content: space-around;
+}
+#first > li {
+    position: relative;
+    padding: 30px 150px;
+    text-align: center;
+    transition: 1s;
+}
+#first > li:hover > #second {
+    top: 100%;
+    opacity: 1;
+}
+
+#second {
+    width: 100%;
+    transition: opacity 0.5s;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    opacity: 0;
+    
+}
+#second > li {
+    padding: 30px;
+    text-align: center;
+}
+#first > li:hover {
+    background: #773030;
+} 
+
+#footer{
+    padding: 0;
+    background-color: #2a2727;
+    font-size: 30px;
+    font-family: "Segoe UI light";
+	text-align: justify;
+}
+
+#contacts{	
+	background-color: #2a2727;
+    color: #ffaa;
+    font-size: 40px;
+    font-family: "Segoe UI light";
+}
+.social{	
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto;
+}
+

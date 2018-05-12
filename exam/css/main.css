@@ -1,0 +1,213 @@
+html, body{
+    font-family: 'Roboto', sans-serif; 
+    background-image: url(../img/background.png);
+}
+
+.arrow_back_up{
+    position: fixed;
+    left: 0px;
+    top: 75%;
+}
+
+.grid{
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "nav"
+                        
+                         "main"
+                         "main1"
+                         "footer";
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    border-bottom: 20px black solid;    
+}
+
+.logo{
+    
+}
+
+.header_txt{
+    display: block;
+    margin: auto auto;
+}
+
+
+h2{
+    border-top: 1px green solid;
+}
+    
+    
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 2px;
+}
+
+nav a img{
+    height: auto; 
+    transition: all .5s;
+}
+
+nav a img:hover{
+   transform: scale(0.9); 
+}
+   
+nav1 a img{
+    height: auto; 
+    transition: all .5s;
+}
+
+nav1 a img:hover{
+   transform: scale(0.9); 
+}
+
+nav2 a img{
+    height: auto; 
+    transition: all .5s;
+}
+
+nav2 a img:hover{
+   transform: scale(0.9); 
+}
+
+nav3 a img{
+    height: auto; 
+    transition: all .5s;
+}
+
+nav3 a img:hover{
+   transform: scale(0.9); 
+}
+
+main{
+    grid-area: main;
+    font-size: 18px;
+}
+
+main img{
+    float: left;
+    margin: auto 10px;
+}
+
+main1{
+    grid-area: main1;
+}
+
+footer{
+    grid-area: footer;
+    margin: auto;
+    padding: 5px 5px;
+    text-align: center;
+}
+footer .social img{
+    margin: 40px 40px;
+    height: auto; 
+    transition: all .5s;
+}
+
+
+footer .social img:hover{
+   transform: scale(0.9); 
+}
+
+
+
+
+
+
+@media screen and (max-width: 670px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "nav1"
+            "nav2"
+            "nav3" 
+            "main1"
+            "main"
+            "footer1";
+    }
+    header{
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .logo{
+        margin: auto;
+    }
+    .header_txt{
+        display: block;
+        font-size: 10px;
+    }
+    nav{
+        display: none;
+    }
+    nav1{
+        grid-area: nav1;
+        margin: auto;
+        display: flex;
+        
+    }
+    nav1 a{
+        display: flex;
+        border: 1px black solid;
+        padding: 10px 10px;
+    }
+    nav2{
+        grid-area: nav2;
+        margin: auto; 
+        display: flex;
+        
+    }
+    nav2 a{
+        display: flex;
+        border: 1px black solid;
+        padding: 10px 10px;
+        
+    }
+    nav3{
+        grid-area: nav3;
+        margin: auto;       
+        display: flex;
+    }
+    nav3 a{
+        display: flex;
+        border: 1px black solid;
+        padding: 10px 10px;
+    }
+    main img, footer{
+        display: none;
+    }
+    footer1{
+        grid-area: footer1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
+    
+@media screen and (min-width: 671px){
+    nav1, nav2, nav3, footer1{
+        display: none;
+    }   
+    main img{
+        display: float;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
+    
